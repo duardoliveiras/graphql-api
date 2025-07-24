@@ -9,3 +9,11 @@
   apollo-server-express
   @nestjs/apollo
 ```
+
+**Database**:
+
+```bash
+  @nestjs/typeorm
+  typeorm
+  sqlite3
+```
