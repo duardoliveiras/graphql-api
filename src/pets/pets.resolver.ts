@@ -6,7 +6,7 @@ import {
   Query,
   ResolveField,
   Resolver,
-} from '@nestjs/graphql';
+} from '@nestjs/graphql'; // not @nestjs/common !!
 import { Owner } from 'src/owners/entities/owner.entity';
 import { CreatePetInput } from './dto/create-pet.input';
 import { Pet } from './entities/pet.entity';
