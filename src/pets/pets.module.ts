@@ -3,6 +3,7 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
+import { OwnersModule } from 'src/owners/owners.module';
 import { Pet } from './entities/pet.entity';
 import { PetsResolver } from './pets.resolver';
 import { PetsService } from './pets.service';
@@ -16,6 +17,7 @@ import { PetsService } from './pets.service';
       playground: false, // Interface antiga (descontinuada)
     }),
     TypeOrmModule.forFeature([Pet]),
+    OwnersModule,
   ],
   providers: [PetsService, PetsResolver],
 })
