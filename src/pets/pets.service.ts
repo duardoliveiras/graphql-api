@@ -15,4 +15,12 @@ export class PetsService {
     const pet = this.petRepository.create(createPetInput);
     return this.petRepository.save(pet);
   }
+
+  async findOne(id: number): Promise<Pet> {
+    return this.petRepository.findOneOrFail({
+      where: {
+        id: id,
+      },
+    });
+  }
 }

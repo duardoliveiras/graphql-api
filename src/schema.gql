@@ -9,7 +9,8 @@ type Pet {
 }
 
 type Query {
-  pets: [Pet!]!
+  findAll: [Pet!]!
+  findOne(id: Int!): Pet!
 }
 
 type Mutation {

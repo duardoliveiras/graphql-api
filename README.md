@@ -17,3 +17,10 @@
   typeorm
   sqlite3
 ```
+
+**Validator**:
+
+```bash
+  class-validator
+  class-transform
+```

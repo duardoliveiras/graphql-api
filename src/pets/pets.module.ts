@@ -12,6 +12,8 @@ import { PetsService } from './pets.service';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      graphiql: true, // Nova interface grafica
+      playground: false, // Interface antiga (descontinuada)
     }),
     TypeOrmModule.forFeature([Pet]),
   ],
